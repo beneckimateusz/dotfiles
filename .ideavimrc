@@ -1,0 +1,6 @@
+" Enable vim-surround plugin
+set surround
+
+" Disable annoying visualbell
+set visualbell
+set t_vb=
