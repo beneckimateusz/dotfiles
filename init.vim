@@ -58,6 +58,7 @@ Plug 'tpope/vim-commentary'
 Plug 'joshdick/onedark.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'sheerun/lightline.vim'
+Plug 'edkolev/tmuxline.vim'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
@@ -78,9 +79,12 @@ if (empty($TMUX))
   endif
 endif
 
-let g:onedark_hide_endofbuffer  =1
+let g:onedark_hide_endofbuffer  = 1
 colorscheme onedark
 
 let g:lightline = {
   \ 'colorscheme': 'onedark',
   \ }
+
+let g:tmuxline_powerline_separators = 0
+let g:tmuxline_preset = 'full'
