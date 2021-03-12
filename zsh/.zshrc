@@ -41,3 +41,6 @@ export PATH=$PATH:$HOME/stuff/scripts
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
   exec tmux
 fi
+
+# Source tmux theme
+tmux source $HOME/.tmux_theme
