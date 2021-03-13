@@ -37,6 +37,9 @@ alias tkill="tmux kill-session -t"
 export BROWSER=/usr/bin/google-chrome-stable
 export PATH=$PATH:$HOME/stuff/scripts
 
+# For GPG on macOS
+export GPG_TTY=$(tty)
+
 # Start tmux
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
   exec tmux
