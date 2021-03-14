@@ -20,6 +20,7 @@ source $ZSH/oh-my-zsh.sh
 
 alias mv="mv -i"
 alias o="xdg-open"
+alias op="open" # macOS
 
 alias wpm="python -m wpm"
 alias notebook="python -m jupyter notebook"
