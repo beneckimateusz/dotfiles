@@ -5,7 +5,7 @@ ZSH_THEME="robbyrussell"
 
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
-plugins=(git npm asdf colored-man-pages zsh-z zsh-syntax-highlighting)
+plugins=(git npm colored-man-pages zsh-z zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -33,6 +33,8 @@ alias n="nvim"
 alias tls="tmux ls"
 alias tkill="tmux kill-session -t"
 
+alias lb="livebook server --open --root-path ~/stuff/notebooks"
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 export BROWSER=/usr/bin/google-chrome-stable
@@ -48,3 +50,6 @@ fi
 
 # Source tmux theme
 tmux source $HOME/.tmux_theme
+
+# Source asdf (macOS)
+. $(brew --prefix asdf)/libexec/asdf.sh
