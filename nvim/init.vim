@@ -63,6 +63,11 @@ else
   let &listchars = 'tab:> ,extends:>,precedes:<,nbsp:.'
 endif
 
+" incremental substitution (neovim)
+if has('nvim')
+  set inccommand=split
+endif
+
 " Imports
 runtime ./plug.vim
 if has("unix")
