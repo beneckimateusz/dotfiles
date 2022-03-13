@@ -1,6 +1,22 @@
 " Base: https://github.com/mhinz/vim-galore#minimal-vimrc
 
+" Split window
+nmap ss :split<Return><C-w>w
+nmap sv :vsplit<Return><C-w>w
+" Move window
+nmap <Space> <C-w>w
+map sh <C-w>h
+map sk <C-w>k
+map sj <C-w>j
+map sl <C-w>l
+" Resize window
+nmap <C-w><left> <C-w><
+nmap <C-w><right> <C-w>>
+nmap <C-w><up> <C-w>+
+
 set nocompatible
+
+set shell=/bin/zsh
 
 filetype plugin indent on  " Load plugins according to detected filetype.
 syntax on                  " Enable syntax highlighting.
@@ -32,9 +48,13 @@ set splitbelow             " Open new windows below the current window.
 set splitright             " Open new windows right of the current window.
 
 set cursorline             " Find the current line quickly.
+
 set wrapscan               " Searches wrap around end-of-file.
 set report      =0         " Always report changed lines.
 set synmaxcol   =200       " Only highlight the first 200 columns.
+
+set scrolloff   =10        " Always at least 10 lines visible above and below the cursor.
+set ignorecase             " Ignore case when searching.
 
 set list                   " Show non-printable characters.
 if has('multi_byte') && &encoding ==# 'utf-8'
@@ -43,25 +63,22 @@ else
   let &listchars = 'tab:> ,extends:>,precedes:<,nbsp:.'
 endif
 
-" The fish shell is not very compatible to other shells and unexpectedly
-" breaks things that use 'shell'.
-if &shell =~# 'fish$'
-  set shell=/bin/bash
+" incremental substitution (neovim)
+if has('nvim')
+  set inccommand=split
 endif
 
-" Plugins will be downloaded under the specified directory.
-call plug#begin('~/.config/nvim/plugged')
+" Imports
+runtime ./plug.vim
+if has("unix")
+  let s:uname = system("uname -s")
+  " Do Mac stuff
+  if s:uname == "Darwin\n"
+    runtime ./macos.vim
+  endif
+endif
 
-" Declare the list of plugins.
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-commentary'
-Plug 'joshdick/onedark.vim'
-Plug 'sheerun/vim-polyglot'
-Plug 'sheerun/lightline.vim'
-Plug 'edkolev/tmuxline.vim'
-
-" List ends here. Plugins become visible to Vim after this call.
-call plug#end()
+runtime ./maps.vim
 
 "Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
 "If you're using tmux version 2.2 or later, you can remove the outermost $TMUX check and use tmux's 24-bit color support
