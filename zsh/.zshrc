@@ -20,7 +20,6 @@ source $ZSH/oh-my-zsh.sh
 
 alias mv="mv -i"
 alias o="xdg-open"
-alias op="open" # macOS
 
 alias wpm="python -m wpm"
 alias notebook="python -m jupyter notebook"
@@ -40,8 +39,14 @@ alias lb="livebook server --open --root-path ~/stuff/notebooks"
 export BROWSER=/usr/bin/google-chrome-stable
 export PATH=$PATH:$HOME/stuff/scripts
 
-# For GPG on macOS
+# macOS
 export GPG_TTY=$(tty)
+. $(brew --prefix asdf)/libexec/asdf.sh # source asdf
+
+alias op="open"
+
+# icloud drive helpers
+export IC="$HOME/Library/Mobile Documents/com~apple~CloudDocs"
 
 # Start tmux
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
@@ -50,6 +55,3 @@ fi
 
 # Source tmux theme
 tmux source $HOME/.tmux_theme
-
-# Source asdf (macOS)
-. $(brew --prefix asdf)/libexec/asdf.sh
