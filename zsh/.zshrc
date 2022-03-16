@@ -18,6 +18,8 @@ source $ZSH/oh-my-zsh.sh
 #   export EDITOR='mvim'
 # fi
 
+alias zshrc="nvim ~/.zshrc"
+
 alias mv="mv -i"
 alias o="xdg-open"
 
@@ -47,6 +49,9 @@ alias op="open"
 
 # icloud drive helpers
 export IC="$HOME/Library/Mobile Documents/com~apple~CloudDocs"
+
+# lf
+export EDITOR="nvim"
 
 # Start tmux
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
