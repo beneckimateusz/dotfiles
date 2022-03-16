@@ -54,9 +54,9 @@ export IC="$HOME/Library/Mobile Documents/com~apple~CloudDocs"
 export EDITOR="nvim"
 
 # Start tmux
-if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-  exec tmux
-fi
+# if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+#   exec tmux
+# fi
 
 # Source tmux theme
-tmux source $HOME/.tmux_theme
+# tmux source $HOME/.tmux_theme
