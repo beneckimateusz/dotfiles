@@ -23,7 +23,6 @@ alias zshrc="nvim ~/.zshrc"
 alias mv="mv -i"
 alias o="xdg-open"
 
-alias wpm="python -m wpm"
 alias notebook="python -m jupyter notebook"
 
 alias d="docker"
@@ -35,6 +34,8 @@ alias tls="tmux ls"
 alias tkill="tmux kill-session -t"
 
 alias lb="livebook server --open --root-path ~/stuff/notebooks"
+
+alias gbfD="git branch | grep feature | xargs git branch -D"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
