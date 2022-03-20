@@ -5,7 +5,7 @@ ZSH_THEME="robbyrussell"
 
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
-plugins=(git npm colored-man-pages zsh-z zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git npm docker docker-compose colored-man-pages zsh-z zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
