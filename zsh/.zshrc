@@ -35,7 +35,7 @@ alias tkill="tmux kill-session -t"
 
 alias lb="livebook server --open --root-path ~/stuff/notebooks"
 
-alias gbfD="git branch | grep feature | xargs git branch -D"
+alias gbmD="git branch | grep -E \"feature|bug\" | xargs git branch -D"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
