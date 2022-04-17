@@ -30,8 +30,8 @@ alias dc="docker-compose"
 
 alias n="nvim"
 
-alias tls="tmux ls"
-alias tkill="tmux kill-session -t"
+# alias tls="tmux ls"
+# alias tkill="tmux kill-session -t"
 
 alias lb="livebook server --open --root-path ~/stuff/notebooks"
 
