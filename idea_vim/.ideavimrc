@@ -3,6 +3,7 @@ set showmode
 set so=5
 set incsearch
 set nu
+set relativenumber
 
 " Disable annoying visualbell
 set visualbell
