@@ -33,7 +33,7 @@ alias n="nvim"
 # alias tls="tmux ls"
 # alias tkill="tmux kill-session -t"
 
-alias lb="livebook server --open --root-path ~/stuff/notebooks"
+alias lb="livebook server --data-path ~/stuff/notebooks/livebook --home ~/stuff/notebooks ~/stuff/notebooks"
 
 alias gbmD="git branch | grep -E \"feature|bug\" | xargs git branch -D"
 
