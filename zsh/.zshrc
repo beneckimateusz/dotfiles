@@ -1,5 +1,6 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+export LANG=en_US.UTF-8
 
 ZSH_THEME="robbyrussell"
 
@@ -37,6 +38,8 @@ alias lb="livebook server --data-path ~/stuff/notebooks/livebook --home ~/stuff/
 
 alias gbmD="git branch | grep -E \"feature|bug\" | xargs git branch -D"
 
+alias fmtc='git diff --name-only | grep -E "^.*\.(ex|exs)$" | xargs mix format'
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 export BROWSER=/usr/bin/google-chrome-stable
@@ -61,3 +64,6 @@ export EDITOR="nvim"
 
 # Source tmux theme
 # tmux source $HOME/.tmux_theme
+
+# temporary
+export SUMO_HOME="/usr/local/opt/sumo/share/sumo"
