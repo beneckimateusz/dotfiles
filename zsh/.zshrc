@@ -38,12 +38,10 @@ alias lb="livebook server --data-path ~/stuff/notebooks/livebook --home ~/stuff/
 
 alias gbmD="git branch | grep -E \"feature|bug\" | xargs git branch -D"
 
-alias fmtc='git diff --name-only | grep -E "^.*\.(ex|exs)$" | xargs mix format'
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 export BROWSER=/usr/bin/google-chrome-stable
-export PATH=$PATH:$HOME/stuff/scripts
+export PATH=$PATH:$HOME/stuff/scripts:$HOME/.local/bin
 
 # macOS
 export GPG_TTY=$(tty)
