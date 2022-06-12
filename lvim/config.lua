@@ -6,14 +6,12 @@ filled in as strings with either
 a global executable or a path to
 an executable
 ]]
--- THESE ARE EXAMPLE CONFIGS FEEL FREE TO CHANGE TO WHATEVER YOU WANT
 
 -- general
 lvim.log.level = "warn"
-lvim.format_on_save = true
+lvim.format_on_save = false
+
 lvim.colorscheme = "onedarker"
--- to disable icons and use a minimalist setup, uncomment the following
--- lvim.use_icons = false
 
 -- keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
@@ -35,6 +33,12 @@ lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 --   l = { "<cmd>Trouble loclist<cr>", "LocationList" },
 --   w = { "<cmd>Trouble workspace_diagnostics<cr>", "Wordspace Diagnostics" },
 -- }
+lvim.builtin.which_key.mappings["S"]= {
+    name = "Session",
+    c = { "<cmd>lua require('persistence').load()<cr>", "Restore last session for current dir" },
+    l = { "<cmd>lua require('persistence').load({ last = true })<cr>", "Restore last session" },
+    Q = { "<cmd>lua require('persistence').stop()<cr>", "Quit without saving session" },
+  }
 
 -- TODO: User Config for predefined plugins
 -- After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
@@ -45,7 +49,6 @@ lvim.builtin.terminal.active = true
 lvim.builtin.nvimtree.setup.view.side = "left"
 lvim.builtin.nvimtree.show_icons.git = 0
 
--- if you don't want all the parsers change this to a table of the ones you want
 lvim.builtin.treesitter.ensure_installed = {
   "bash",
   "c",
@@ -70,6 +73,63 @@ vim.opt.relativenumber = true -- set relative numbered lines
 vim.opt.scrolloff = 8 -- is one of my fav
 
 lvim.plugins = {
-  { "iamcco/markdown-preview.nvim", run = "cd app && npm install",
-    setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, }
+  {
+    "iamcco/markdown-preview.nvim", run = "cd app && npm install",
+    setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }
+  },
+  {
+    "tpope/vim-surround",
+    keys = {"c", "d", "y"}
+    -- make sure to change the value of `timeoutlen` if it's not triggering correctly, see https://github.com/tpope/vim-surround/issues/117
+    -- setup = function()
+      --  vim.o.timeoutlen = 500
+    -- end
+  },
+  {
+    "folke/todo-comments.nvim",
+     event = "BufRead",
+     config = function()
+       require("todo-comments").setup()
+     end,
+  },
+  {
+    "folke/persistence.nvim",
+     event = "BufReadPre", -- this will only start session saving when an actual file was opened
+     module = "persistence",
+     config = function()
+       require("persistence").setup {
+         dir = vim.fn.expand(vim.fn.stdpath "config" .. "/session/"),
+         options = { "buffers", "curdir", "tabpages", "winsize" },
+       }
+     end,
+  },
+  {
+    "lukas-reineke/indent-blankline.nvim",
+    event = "BufRead",
+    setup = function()
+      vim.g.indentLine_enabled = 1
+      vim.g.indent_blankline_char = "▏"
+      vim.g.indent_blankline_filetype_exclude = {"help", "terminal", "dashboard"}
+      vim.g.indent_blankline_buftype_exclude = {"terminal"}
+      vim.g.indent_blankline_show_trailing_blankline_indent = false
+      vim.g.indent_blankline_show_first_indent_level = false
+    end
+  },
+  {
+    "ray-x/lsp_signature.nvim",
+    event = "BufRead",
+    config = function()
+      require "lsp_signature".setup()
+    end
+  },
+  {
+    "phaazon/hop.nvim",
+    event = "BufRead",
+    config = function()
+      require("hop").setup()
+      vim.api.nvim_set_keymap("n", "s", ":HopChar2<cr>", { silent = true })
+      vim.api.nvim_set_keymap("n", "S", ":HopWord<cr>", { silent = true })
+    end,
+  },
 }
+
