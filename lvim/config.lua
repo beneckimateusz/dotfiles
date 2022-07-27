@@ -11,7 +11,7 @@ an executable
 lvim.log.level = "warn"
 lvim.format_on_save = false
 
-lvim.colorscheme = "onedarker"
+lvim.colorscheme = "onedark"
 
 -- keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
@@ -131,5 +131,13 @@ lvim.plugins = {
       vim.api.nvim_set_keymap("n", "S", ":HopWord<cr>", { silent = true })
     end,
   },
+  {
+    "navarasu/onedark.nvim",
+    config = function()
+      require("onedark").setup {
+        style = 'warmer'
+      }
+    end
+  }
 }
 
