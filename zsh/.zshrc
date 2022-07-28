@@ -63,5 +63,6 @@ fi
 # Source tmux theme
 tmux source $HOME/.tmux_theme
 
-# temporary
-export SUMO_HOME="/usr/local/opt/sumo/share/sumo"
+# Starship
+eval "$(starship init zsh)"
+
