@@ -66,3 +66,6 @@ tmux source $HOME/.tmux_theme
 # Starship
 eval "$(starship init zsh)"
 
+# postgres tools
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+
