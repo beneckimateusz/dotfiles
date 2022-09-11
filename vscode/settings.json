@@ -37,7 +37,7 @@
     "jupyter-notebook": "left"
   },
   // --- extensions ---
-  "vim.neovimPath": "/usr/bin/nvim",
+  "vim.neovimPath": "/opt/homebrew/bin/nvim",
   "vim.insertModeKeyBindingsNonRecursive": [
     // escape to normal mode
     {
@@ -46,6 +46,40 @@
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
+    // command palette
+    {
+      "before": ["<Leader>", "p"],
+      "commands": ["workbench.action.showCommands"]
+    },
+    // disable highlight on search results
+    {
+      "before": ["<Leader>", "h"],
+      "commands": [":noh"]
+    },
+    // save
+    {
+      "before": ["<Leader>", "w"],
+      "commands": ["workbench.action.files.save"]
+    },
+    // close file
+    {
+      "before": ["<Leader>", "c"],
+      "commands": [":q"]
+    },
+    // explorer
+    {
+      "before": ["<Leader>", "e"],
+      "commands": ["workbench.view.explorer"]
+    },
+    // easier indenting
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
+    },
     // switching panes faster
     {
       "before": ["<C-h>"],
@@ -65,16 +99,7 @@
       "before": ["<C-l>"],
       "after": ["<C-w>", "l"]
     },
-    // tab operations
     // buffers
-    {
-      "before": ["<Leader>", "w"],
-      "commands": ["workbench.action.files.save"]
-    },
-    {
-      "before": ["<Leader>", "c"],
-      "commands": [":q"]
-    },
     {
       "before": ["<Leader>", "b", "t"],
       "commands": [":tabnew"]
@@ -108,11 +133,6 @@
       "before": ["<Leader>", "s", "t"],
       "commands": ["workbench.action.findInFiles"]
     },
-    // explorer (e)
-    {
-      "before": ["<Leader>", "e"],
-      "commands": ["workbench.view.explorer"]
-    },
     // git (g)
     {
       "before": ["<Leader>", "g", "s"],
@@ -143,25 +163,6 @@
       ]
     },
     // todo: add gitlens
-    // command palette
-    {
-      "before": ["<Leader>", "p"],
-      "commands": ["workbench.action.showCommands"]
-    },
-    // disable highlight on search results
-    {
-      "before": ["<Leader>", "h"],
-      "commands": [":noh"]
-    },
-    // easier indenting
-    {
-      "before": [">"],
-      "commands": ["editor.action.indentLines"]
-    },
-    {
-      "before": ["<"],
-      "commands": ["editor.action.outdentLines"]
-    },
     // bookmarks
     {
       "before": ["<Leader>", "m", "t"],
@@ -174,6 +175,31 @@
     {
       "before": ["<Leader>", "m", "f"],
       "commands": ["bookmarks.listFromAllFiles"]
+    },
+    // lsp
+    {
+      "before": ["<Leader", "l", "f"],
+      "commands": ["editor.action.formatDocument"]
+    },
+    {
+      "before": ["<Leader", "l", "r"],
+      "commands": ["editor.action.rename"]
+    },
+    {
+      "before": ["<Leader", "l", "s"],
+      "commands": ["workbench.action.gotoSymbol"]
+    },
+    {
+      "before": ["<Leader", "l", "w"],
+      "commands": ["workbench.action.view.problems"]
+    },
+    {
+      "before": ["<Leader", "l", "k"],
+      "commands": ["editor.action.marker.previous"]
+    },
+    {
+      "before": ["<Leader", "l", "j"],
+      "commands": ["editor.action.marker.next"]
     }
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
@@ -204,5 +230,7 @@
   "tailwindCSS.includeLanguages": {
     "elixir": "html"
   },
-  "gitlens.codeLens.enabled": false
+  "gitlens.codeLens.enabled": false,
+  "vim.easymotion": true,
+  "vim.enableNeovim": true
 }
