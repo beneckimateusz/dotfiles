@@ -25,14 +25,17 @@ export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 export GPG_TTY=$(tty)
 export IC="$HOME/Library/Mobile Documents/com~apple~CloudDocs"
 
-alias zshrc="nvim ~/.zshrc"
 alias vim="nvim"
 alias l="exa -l -g --icons"
 alias la="l -a"
+alias cat="bat"
 alias mv="mv -i"
 alias op="open"
+
 alias d="docker"
 alias dc="docker-compose"
+
+alias zshrc="nvim ~/.zshrc"
 alias lb="livebook server --data-path ~/stuff/notebooks/livebook --home ~/stuff/notebooks ~/stuff/notebooks"
 alias gbmD="git branch | grep -E \"feature|bug\" | xargs git branch -D"
 
