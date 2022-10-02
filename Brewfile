@@ -2,6 +2,7 @@
 brew "asdf"
 brew "awscli"
 brew "bat"
+brew "exa"
 brew "fzf"
 brew "htop"
 brew "imagemagick"
