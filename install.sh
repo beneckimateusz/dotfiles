@@ -6,6 +6,10 @@ function backup_file () {
 
 DOTFILES_PATH=$1
 
+# git
+backup_file "$HOME/.gitconfig"
+ln -s "$DOTFILES_PATH/.gitconfig" "$HOME/.gitconfig"
+
 # zsh
 backup_file "$HOME/.zshrc"
 ln -s "$DOTFILES_PATH/.zshrc" "$HOME/.zshrc"
