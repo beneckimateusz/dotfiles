@@ -32,6 +32,9 @@ alias cat="bat"
 alias mv="mv -i"
 alias op="open"
 
+# dirty hack
+alias gs="echo '🙈'"
+
 alias d="docker"
 alias dc="docker-compose"
 
