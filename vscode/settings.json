@@ -232,5 +232,8 @@
   },
   "gitlens.codeLens.enabled": false,
   "vim.easymotion": true,
-  "vim.enableNeovim": true
+  "vim.enableNeovim": true,
+  "remote.SSH.defaultExtensions": [
+    "gitpod.gitpod-remote-ssh"
+  ]
 }
