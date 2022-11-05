@@ -20,6 +20,7 @@ brew "telnet"
 brew "tldr"
 brew "tmux"
 brew "tree"
+brew "wxwidgets"
 brew "xclip"
 brew "youtube-dl"
 
