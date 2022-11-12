@@ -235,5 +235,6 @@
   "vim.enableNeovim": true,
   "remote.SSH.defaultExtensions": [
     "gitpod.gitpod-remote-ssh"
-  ]
+  ],
+  "editor.cursorBlinking": "solid"
 }
