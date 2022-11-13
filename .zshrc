@@ -26,8 +26,8 @@ export GPG_TTY=$(tty)
 export IC="$HOME/Library/Mobile Documents/com~apple~CloudDocs"
 
 alias vim="nvim"
-alias l="exa -l -g --icons"
-alias la="l -a"
+alias l="exa -l -g --icons --group-directories-first"
+alias la="exa -a -l -g --icons --group-directories-first"
 alias cat="bat"
 alias mv="mv -i"
 alias op="open"
@@ -38,8 +38,18 @@ alias gs="echo '🙈'"
 alias d="docker"
 alias dc="docker-compose"
 
-alias zshrc="nvim ~/.zshrc"
+alias mf="mix format"
+alias mfa="mix format.all"
+alias mt="mix test"
+alias mtw="fswatch lib test | mix test --stale --listen-on-stdin"
+alias md="mix docs -f html"
+alias mr="mix run"
+alias mc="mix compile"
+
+alias meg="mix ecto.gen.migration"
 alias lb="livebook server --data-path ~/stuff/notebooks/livebook --home ~/stuff/notebooks ~/stuff/notebooks"
+
+alias zshrc="nvim ~/.zshrc"
 alias gbmD="git branch | grep -E \"feature|bug\" | xargs git branch -D"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
