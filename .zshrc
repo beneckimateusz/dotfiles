@@ -50,7 +50,7 @@ alias meg="mix ecto.gen.migration"
 alias lb="livebook server --data-path ~/stuff/notebooks/livebook --home ~/stuff/notebooks ~/stuff/notebooks"
 
 alias zshrc="nvim ~/.zshrc"
-alias gbmD="git branch | grep -E \"feature|bug\" | xargs git branch -D"
+alias gbmD="git branch | grep -E \"feature|bug|chore\" | xargs git branch -D"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 . $(brew --prefix asdf)/libexec/asdf.sh
