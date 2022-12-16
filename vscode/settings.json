@@ -18,7 +18,8 @@
   // },
   "editor.tabSize": 2,
   "emmet.includeLanguages": {
-    "html-eex": "html"
+    "html-eex": "html",
+    "elixir": "html"
   },
   // --- misc ---
   "workbench.startupEditor": "newUntitledFile",
@@ -236,5 +237,7 @@
   "remote.SSH.defaultExtensions": [
     "gitpod.gitpod-remote-ssh"
   ],
-  "editor.cursorBlinking": "solid"
+  "editor.cursorBlinking": "solid",
+  "editor.fontLigatures": true,
+  "emmet.triggerExpansionOnTab": true
 }
