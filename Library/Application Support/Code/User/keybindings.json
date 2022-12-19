@@ -1,0 +1,90 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "ctrl+shift+p",
+    "command": "workbench.action.tasks.runTask",
+    "args": "pandoc",
+    "when": "editorTextFocus && editorLangId == 'markdown'"
+  },
+  // neovim
+  {
+    "key": "ctrl+shift+p",
+    "command": "-vscode-neovim.send",
+    "when": "editorTextFocus && neovim.mode == 'visual'"
+  },
+  // vim
+  {
+    "key": "shift+l",
+    "command": "workbench.action.nextEditorInGroup",
+    "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
+  },
+  {
+    "key": "shift+h",
+    "command": "workbench.action.previousEditorInGroup",
+    "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
+  },
+  // editor
+  {
+    "key": "alt+w",
+    "command": "editor.action.toggleWordWrap"
+  },
+  {
+    "key": "alt+z",
+    "command": "-editor.action.toggleWordWrap"
+  },
+  {
+    "key": "shift+alt+i",
+    "command": "-editor.action.insertCursorAtEndOfEachLineSelected",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+cmd+i",
+    "command": "editor.action.formatDocument",
+    "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+  },
+  {
+    "key": "shift+alt+f",
+    "command": "-editor.action.formatDocument",
+    "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+  },
+  {
+    "key": "shift+cmd+i",
+    "command": "editor.action.formatDocument.none",
+    "when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+f",
+    "command": "-editor.action.formatDocument.none",
+    "when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly"
+  },
+  // tabs
+  {
+    "key": "ctrl+tab",
+    "command": "workbench.action.nextEditorInGroup"
+  },
+  {
+    "key": "ctrl+shift+tab",
+    "command": "workbench.action.previousEditorInGroup"
+  },
+  // git
+  {
+    "key": "cmd+;",
+    "command": "workbench.action.compareEditor.previousChange",
+    "when": "textCompareEditorVisible && isInDiffEditor"
+  },
+  {
+    "key": "cmd+'",
+    "command": "workbench.action.compareEditor.nextChange",
+    "when": "textCompareEditorVisible  && isInDiffEditor"
+  },
+  {
+    "key": "cmd+shift+'",
+    "command": "git.stage",
+    "when": "workbench.scm.active"
+  },
+  {
+    "key": "cmd+shift+;",
+    "command": "git.unstage",
+    "when": "workbench.scm.active"
+  },
+]

@@ -1,0 +1,8 @@
+# macOS specific fiels
+.DS_Store
+
+# VSCode files
+.vscode/
+
+# The configuration git bare repository
+/.dotfiles/

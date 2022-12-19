@@ -1,0 +1,243 @@
+{
+  // themes
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "One Dark Pro Darker",
+  // --- editor ---
+  "editor.fontSize": 13,
+  "editor.fontFamily": "'JetBrains Mono', 'Roboto Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  "editor.lineNumbers": "relative",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[elixir]": {
+    "editor.defaultFormatter": "JakeBecker.elixir-ls"
+  },
+  "[phoenix-heex]": {
+    "editor.defaultFormatter": "JakeBecker.elixir-ls"
+  },
+  // "editor.codeActionsOnSave": {
+  //     "source.organizeImports": true
+  // },
+  "editor.tabSize": 2,
+  "emmet.includeLanguages": {
+    "html-eex": "html",
+    "elixir": "html"
+  },
+  // --- misc ---
+  "workbench.startupEditor": "newUntitledFile",
+  "zenMode.hideLineNumbers": false,
+  "files.trimTrailingWhitespace": true,
+  "files.defaultLanguage": "markdown",
+  "explorer.confirmDragAndDrop": false,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "workbench.list.automaticKeyboardNavigation": false,
+  "terminal.integrated.gpuAcceleration": "off",
+  "notebook.lineNumbers": "on",
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  // --- extensions ---
+  "vim.neovimPath": "/opt/homebrew/bin/nvim",
+  "vim.insertModeKeyBindingsNonRecursive": [
+    // escape to normal mode
+    {
+      "before": ["j", "k"],
+      "after": ["<ESC>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // command palette
+    {
+      "before": ["<Leader>", "p"],
+      "commands": ["workbench.action.showCommands"]
+    },
+    // disable highlight on search results
+    {
+      "before": ["<Leader>", "h"],
+      "commands": [":noh"]
+    },
+    // save
+    {
+      "before": ["<Leader>", "w"],
+      "commands": ["workbench.action.files.save"]
+    },
+    // close file
+    {
+      "before": ["<Leader>", "c"],
+      "commands": [":q"]
+    },
+    // explorer
+    {
+      "before": ["<Leader>", "e"],
+      "commands": ["workbench.view.explorer"]
+    },
+    // easier indenting
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
+    },
+    // switching panes faster
+    {
+      "before": ["<C-h>"],
+      "after": ["<C-w>", "h"]
+    },
+    // conficlits with macOS custom desktop switching
+    {
+      "before": ["<C-j>"],
+      "after": ["<C-w>", "j"]
+    },
+    // conficlits with macOS custom desktop switching
+    {
+      "before": ["<C-k>"],
+      "after": ["<C-w>", "k"]
+    },
+    {
+      "before": ["<C-l>"],
+      "after": ["<C-w>", "l"]
+    },
+    // buffers
+    {
+      "before": ["<Leader>", "b", "t"],
+      "commands": [":tabnew"]
+    },
+    {
+      "before": ["<Leader>", "b", "n"],
+      "commands": [":tabnext"]
+    },
+    {
+      "before": ["<Leader>", "b", "p"],
+      "commands": [":tabprev"]
+    },
+    {
+      "before": ["<Leader>", "b", "o"],
+      "commands": [":tabo"]
+    },
+    {
+      "before": ["<Leader>", "b", "h"],
+      "commands": ["workbench.action.closeEditorsToTheLeft"]
+    },
+    {
+      "before": ["<Leader>", "b", "l"],
+      "commands": ["workbench.action.closeEditorsToTheRight"]
+    },
+    // search (s)
+    {
+      "before": ["<Leader>", "s", "f"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["<Leader>", "s", "t"],
+      "commands": ["workbench.action.findInFiles"]
+    },
+    // git (g)
+    {
+      "before": ["<Leader>", "g", "s"],
+      "commands": ["workbench.view.scm"]
+    },
+    {
+      "before": ["<Leader>", "g", "b"],
+      "commands": ["gitlens.toggleFileBlame"]
+    },
+    {
+      "before": ["<Leader>", "g", "/"],
+      "commands": ["gitlens.gitCommands"]
+    },
+    {
+      "before": ["<Leader>", "g", "h"],
+      "commands": [
+        "gitlens.diffWithPrevious",
+        "gitlens.diffWithPreviousInDiffLeft",
+        "gitlens.diffWithPreviousInDiffRight"
+      ]
+    },
+    {
+      "before": ["<Leader>", "g", "l"],
+      "commands": [
+        "gitlens.diffWithNext",
+        "gitlens.diffWithNextInDiffLeft",
+        "gitlens.diffWithNextInDiffRight"
+      ]
+    },
+    // todo: add gitlens
+    // bookmarks
+    {
+      "before": ["<Leader>", "m", "t"],
+      "commands": ["bookmarks.toggle"]
+    },
+    {
+      "before": ["<Leader>", "m", "l"],
+      "commands": ["bookmarks.list"]
+    },
+    {
+      "before": ["<Leader>", "m", "f"],
+      "commands": ["bookmarks.listFromAllFiles"]
+    },
+    // lsp
+    {
+      "before": ["<Leader", "l", "f"],
+      "commands": ["editor.action.formatDocument"]
+    },
+    {
+      "before": ["<Leader", "l", "r"],
+      "commands": ["editor.action.rename"]
+    },
+    {
+      "before": ["<Leader", "l", "s"],
+      "commands": ["workbench.action.gotoSymbol"]
+    },
+    {
+      "before": ["<Leader", "l", "w"],
+      "commands": ["workbench.action.view.problems"]
+    },
+    {
+      "before": ["<Leader", "l", "k"],
+      "commands": ["editor.action.marker.previous"]
+    },
+    {
+      "before": ["<Leader", "l", "j"],
+      "commands": ["editor.action.marker.next"]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    // easier indenting
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
+    }
+  ],
+  "vim.leader": "<Space>",
+  "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
+  "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
+  "prettier.singleQuote": true,
+  "markdown-pdf.displayHeaderFooter": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "elixirLS.suggestSpecs": false,
+  "pasteImage.defaultName": "scr_HH_mm_ss",
+  "pasteImage.path": "${currentFileDir}/img",
+  "pasteImage.showFilePathConfirmInputBox": true,
+  "erlang.rebarPath": "/usr/local/bin/rebar3",
+  "python.languageServer": "Pylance",
+  "python.showStartPage": false,
+  "tailwindCSS.includeLanguages": {
+    "elixir": "html"
+  },
+  "gitlens.codeLens.enabled": false,
+  "vim.easymotion": true,
+  "vim.enableNeovim": true,
+  "remote.SSH.defaultExtensions": [
+    "gitpod.gitpod-remote-ssh"
+  ],
+  "editor.cursorBlinking": "solid",
+  "editor.fontLigatures": true,
+  "emmet.triggerExpansionOnTab": true
+}
