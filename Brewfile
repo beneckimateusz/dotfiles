@@ -2,6 +2,7 @@
 brew "asdf"
 brew "awscli"
 brew "bat"
+brew "cmacrae/formulae/spacebar"
 brew "exa"
 brew "fzf"
 brew "gh"
