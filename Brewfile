@@ -27,7 +27,7 @@ brew "xclip"
 brew "youtube-dl"
 
 # cask
-cask "amethyst"
+cask "alacritty"
 cask "basictex"
 cask "brave-browser"
 cask "dbeaver-community"

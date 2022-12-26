@@ -92,6 +92,9 @@ alt + shift - space : \
     yabai -m window --grid 4:4:1:1:2:2; \
     yabai -m window --toggle border
 
+# open terminal
+alt - return : open -n /Applications/Alacritty.app
+
 # restart yabai
 alt + lctrl + shift - r : \
     /usr/bin/env osascript <<< \
