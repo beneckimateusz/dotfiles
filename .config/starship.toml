@@ -8,7 +8,6 @@ $cmd_duration"""
 add_newline = false
 
 [character]
-success_symbol = "[Ⲗ](bold blue) "
 error_symbol = "[✖](bold red) "
 
 [directory]
