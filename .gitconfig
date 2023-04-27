@@ -15,6 +15,8 @@ email = benecki.mateusz@gmail.com
 [delta]
     navigate = true    # use n and N to move between diff sections
     light = false      # set to true if you're in a terminal w/ a light background color (e.g. the default macOS terminal)
+    side-by-side = true
+    line-numbers = true
 
 [merge]
     conflictstyle = diff3
@@ -30,3 +32,15 @@ email = benecki.mateusz@gmail.com
 
 [credential]
   helper = store
+
+[user]
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOGjTJRvojJ02NPq7jC3Z7Kw3nDy1ZDFyWHC0XSBqIvD
+
+[gpg]
+  format = ssh
+
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+
+[commit]
+  gpgsign = true
