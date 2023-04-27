@@ -239,5 +239,9 @@
   ],
   "editor.cursorBlinking": "solid",
   "editor.fontLigatures": true,
-  "emmet.triggerExpansionOnTab": true
+  "emmet.triggerExpansionOnTab": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "[python]": {
+    "editor.formatOnType": true
+  }
 }
