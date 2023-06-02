@@ -58,6 +58,9 @@ alias zshrc="nvim ~/.zshrc"
 ## git
 alias gbmD="git branch | grep -E \"feature|bug|chore\" | xargs git branch -D"
 
+## yabai
+alias yrow="echo \"$(whoami) ALL=(root) NOPASSWD: sha256:$(shasum -a 256 $(which yabai) | cut -d " " -f 1) $(which yabai) --load-sa\""
+
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 . $(brew --prefix asdf)/libexec/asdf.sh
