@@ -13,7 +13,6 @@ Plug 'sheerun/vim-polyglot'
 
 Plug 'joshdick/onedark.vim'
 Plug 'sheerun/lightline.vim'
-Plug 'edkolev/tmuxline.vim'
 
 if has("nvim")
   " nvim specific plugins
