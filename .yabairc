@@ -52,8 +52,7 @@ yabai -m rule --add title='Preferences$' manage=off
 # float settings windows
 yabai -m rule --add title='Settings$' manage=off
 
-# spacebar padding on top screen
-SPACEBAR_HEIGHT=$(spacebar -m config height)
-yabai -m config external_bar all:$SPACEBAR_HEIGHT:0
+# external spacebar padding on top screen
+yabai -m config external_bar all:30:0
 
 echo "yabai configuration loaded.."
