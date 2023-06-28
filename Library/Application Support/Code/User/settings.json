@@ -242,7 +242,8 @@
   "emmet.triggerExpansionOnTab": true,
   "diffEditor.ignoreTrimWhitespace": false,
   "[python]": {
-    "editor.formatOnType": true
+    "editor.formatOnType": true,
+    "editor.defaultFormatter": "ms-python.python"
   },
   "[html-eex]": {
     "editor.defaultFormatter": "JakeBecker.elixir-ls"
