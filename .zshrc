@@ -57,6 +57,7 @@ alias zshrc="nvim ~/.zshrc"
 
 ## git
 alias gbmD="git branch | grep -E \"feature|bug|chore\" | xargs git branch -D"
+alias lg="lazygit"
 
 ## yabai
 alias yrow="echo \"$(whoami) ALL=(root) NOPASSWD: sha256:$(shasum -a 256 $(which yabai) | cut -d " " -f 1) $(which yabai) --load-sa\""
