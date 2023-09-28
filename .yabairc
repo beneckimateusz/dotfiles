@@ -53,6 +53,6 @@ yabai -m rule --add title='Preferences$' manage=off
 yabai -m rule --add title='Settings$' manage=off
 
 # external spacebar padding on top screen
-yabai -m config external_bar all:30:0
+# yabai -m config external_bar all:30:0
 
 echo "yabai configuration loaded.."
