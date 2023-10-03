@@ -4,7 +4,7 @@
   "workbench.colorTheme": "One Dark Pro Darker",
   // --- editor ---
   "editor.fontSize": 13,
-  "editor.fontFamily": "'JetBrains Mono', 'Roboto Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  "editor.fontFamily": "'JetBrainsMono Nerd Font', 'Roboto Mono', 'monospace', monospace, 'Droid Sans Fallback'",
   "editor.lineNumbers": "relative",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[elixir]": {
