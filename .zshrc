@@ -20,7 +20,7 @@ fi
 export BROWSER=/usr/bin/google-chrome-stable
 export GPG_TTY=$(tty)
 
-export PATH="$HOME/.local/bin:/opt/homebrew/opt/libpq/bin:$PATH"
+export PATH="$HOME/.local/bin:/opt/homebrew/opt/libpq/bin:$HOME/.config/emacs/bin:$PATH"
 
 # aliases
 
@@ -51,7 +51,7 @@ alias mr="mix run"
 alias mc="mix compile"
 
 alias meg="mix ecto.gen.migration"
-alias lb="livebook server --data-path ~/stuff/notebooks/livebook --home ~/stuff/notebooks ~/stuff/notebooks"
+alias lb="LIVEBOOK_DATA_PATH=$HOME/stuff/notebooks/.livebook LIVEBOOK_HOME=$HOME/stuff/notebooks livebook server @home"
 
 alias zshrc="nvim ~/.zshrc"
 
