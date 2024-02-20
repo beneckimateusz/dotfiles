@@ -6,7 +6,7 @@ ZSH_THEME="robbyrussell"
 
 # standard plugins can be found in $ZSH/plugins/
 # custom plugins may be added to $ZSH_CUSTOM/plugins/
-plugins=(git npm docker docker-compose colored-man-pages zsh-z zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git npm docker docker-compose colored-man-pages z zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -28,8 +28,8 @@ export PATH="$HOME/.local/bin:/opt/homebrew/opt/libpq/bin:$HOME/.config/emacs/bi
 alias dotfiles='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 
 alias vim="nvim"
-alias l="exa -l -g --icons --group-directories-first"
-alias la="exa -a -l -g --icons --group-directories-first"
+alias l="eza -l -g --icons --group-directories-first"
+alias la="eza -a -l -g --icons --group-directories-first"
 alias cat="bat"
 alias mv="mv -i"
 alias op="open"
@@ -60,7 +60,7 @@ alias gbmD="git branch | grep -E \"feature|bug|chore\" | xargs git branch -D"
 alias lg="lazygit"
 
 ## yabai
-alias yrow="echo \"$(whoami) ALL=(root) NOPASSWD: sha256:$(shasum -a 256 $(which yabai) | cut -d " " -f 1) $(which yabai) --load-sa\""
+# alias yrow="echo \"$(whoami) ALL=(root) NOPASSWD: sha256:$(shasum -a 256 $(which yabai) | cut -d " " -f 1) $(which yabai) --load-sa\""
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
