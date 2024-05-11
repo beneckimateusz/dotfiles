@@ -1,5 +1,6 @@
 # tap
 tap "jesseduffield/lazygit"
+tap "jesseduffield/lazydocker"
 # tap "koekeishiya/formulae"
 
 # formulae
@@ -14,6 +15,7 @@ brew "git-delta"
 brew "htop"
 brew "imagemagick"
 brew "jesseduffield/lazygit/lazygit"
+brew "jesseduffield/lazydocker/lazydocker"
 brew "jq"
 brew "koekeishiya/formulae/skhd"
 # brew "koekeishiya/formulae/yabai"
