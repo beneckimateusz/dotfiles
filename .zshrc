@@ -22,6 +22,12 @@ export GPG_TTY=$(tty)
 
 export PATH="$HOME/.local/bin:/opt/homebrew/opt/libpq/bin:$HOME/.config/emacs/bin:$PATH"
 
+## golang
+export GOPATH=$HOME/go
+export GOROOT=/opt/homebrew/opt/go/libexec
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin
+
 # aliases
 
 ## for more details see https://www.atlassian.com/git/tutorials/dotfiles
