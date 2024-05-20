@@ -1,7 +1,7 @@
 {
   // themes
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "One Dark Pro Darker",
+  "workbench.colorTheme": "Default Light+",
   // --- editor ---
   "editor.fontSize": 13,
   "editor.fontFamily": "'JetBrainsMono Nerd Font', 'Roboto Mono', 'monospace', monospace, 'Droid Sans Fallback'",
@@ -247,5 +247,8 @@
   },
   "[html-eex]": {
     "editor.defaultFormatter": "JakeBecker.elixir-ls"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
   }
 }
