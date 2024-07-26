@@ -40,6 +40,7 @@ brew "youtube-dl"
 
 # cask
 cask "alacritty"
+cask "anki"
 cask "arc"
 # cask "basictex"
 # cask "brave-browser"
