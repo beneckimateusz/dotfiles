@@ -82,3 +82,13 @@ family = "JetBrainsMono Nerd Font Mono"
 [window]
 decorations = "buttonless"
 opacity = 1.0
+
+[[keyboard.bindings]]
+key = "F"
+mods = "Alt"
+chars = "\u001b\u0066"
+
+[[keyboard.bindings]]
+key = "B"
+mods = "Alt"
+chars = "\u001b\u0062"
