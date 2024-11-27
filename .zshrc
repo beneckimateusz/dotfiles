@@ -68,6 +68,9 @@ alias lg="lazygit"
 ## yabai
 # alias yrow="echo \"$(whoami) ALL=(root) NOPASSWD: sha256:$(shasum -a 256 $(which yabai) | cut -d " " -f 1) $(which yabai) --load-sa\""
 
+# kubernetes
+alias k="kubectl"
+
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 . $(brew --prefix asdf)/libexec/asdf.sh
