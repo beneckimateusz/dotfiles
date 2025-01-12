@@ -32,7 +32,7 @@ brew "telnet"
 brew "tldr"
 brew "tmux"
 brew "tree"
-brew "youtube-dl"
+brew "yt-dlp"
 
 # cask
 cask "alacritty"
