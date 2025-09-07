@@ -4,5 +4,8 @@
 # VSCode files
 .vscode/
 
+# Zed files
+.zed/
+
 # The configuration git bare repository
 /.dotfiles/
