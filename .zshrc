@@ -5,7 +5,7 @@ ZSH_THEME="robbyrussell"
 
 # standard plugins can be found in $ZSH/plugins/
 # custom plugins may be added to $ZSH_CUSTOM/plugins/
-plugins=(git npm docker docker-compose colored-man-pages z zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git npm docker docker-compose mise colored-man-pages z zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -13,11 +13,6 @@ export BROWSER=/usr/bin/google-chrome-stable
 
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:/opt/homebrew/opt/libpq/bin"
-
-export GOPATH="$HOME/go"
-export GOROOT=/opt/homebrew/opt/go/libexec
-export PATH="$PATH:$GOPATH/bin"
-export PATH="$PATH:$GOROOT/bin"
 
 # https://www.atlassian.com/git/tutorials/dotfiles
 alias dotfiles='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
@@ -39,5 +34,4 @@ alias zshrc="nvim ~/.zshrc"
 
 eval "$(starship init zsh)"
 
-. "$(brew --prefix asdf)/libexec/asdf.sh"
 eval "$(~/.local/bin/mise activate)"
