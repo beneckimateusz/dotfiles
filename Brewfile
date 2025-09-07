@@ -41,8 +41,11 @@ brew "yt-dlp"
 cask "alacritty"
 cask "amethyst"
 cask "docker-desktop"
+cask "garmin-express"
 cask "google-chrome"
+cask "keyboardcleantool"
 cask "obsidian"
+cask "tailscale-app"
 cask "telegram"
 cask "qbittorrent"
 cask "visual-studio-code"
@@ -57,4 +60,3 @@ mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Things", id: 904280696
-
