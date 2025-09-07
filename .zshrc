@@ -77,3 +77,6 @@ alias k="kubectl"
 
 # starship
 eval "$(starship init zsh)"
+
+# mise
+eval "$(~/.local/bin/mise activate)"
