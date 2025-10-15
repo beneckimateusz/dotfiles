@@ -35,3 +35,8 @@ alias zshrc="nvim ~/.zshrc"
 eval "$(starship init zsh)"
 
 eval "$(~/.local/bin/mise activate)"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/mateusz/.lmstudio/bin"
+# End of LM Studio CLI section
+

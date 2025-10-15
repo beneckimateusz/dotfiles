@@ -82,6 +82,7 @@ family = "JetBrainsMono Nerd Font Mono"
 [window]
 decorations = "buttonless"
 opacity = 1.0
+option_as_alt = "OnlyLeft"
 
 [[keyboard.bindings]]
 key = "F"
