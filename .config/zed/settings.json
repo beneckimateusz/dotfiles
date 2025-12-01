@@ -7,12 +7,14 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "icon_theme": "Catppuccin Macchiato",
   "theme": {
     "mode": "system",
-    "light": "One Light",
+    "light": "Gruvbox Dark",
     "dark": "One Dark"
   },
   "vim_mode": true,
+  "relative_line_numbers": "enabled",
   "ui_font_size": 15,
   "buffer_font_size": 14,
   "buffer_font_family": "JetBrainsMono Nerd Font",
