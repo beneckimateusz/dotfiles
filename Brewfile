@@ -51,11 +51,14 @@ cask "qbittorrent"
 cask "visual-studio-code"
 cask "whatsapp"
 cask "zed"
+cask "zen"
+cask "zwift"
 
 # mas
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
+mas "Klack", id: 6446206067
 mas "Numbers", id: 409203825
 mas "Organic Maps: GPS navigation", id: 1567437057
 mas "Pages", id: 409201541
