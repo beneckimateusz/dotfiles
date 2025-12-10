@@ -10,6 +10,7 @@ plugins=(git npm docker docker-compose mise colored-man-pages z zsh-autosuggesti
 source $ZSH/oh-my-zsh.sh
 
 export BROWSER=/usr/bin/google-chrome-stable
+export EDITOR="nvim"
 
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:/opt/homebrew/opt/libpq/bin"
