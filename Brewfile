@@ -39,11 +39,11 @@ brew "yt-dlp"
 
 # cask
 cask "alacritty"
-cask "amethyst"
 cask "docker-desktop"
 cask "garmin-express"
 cask "google-chrome"
 cask "keyboardcleantool"
+cask "nikitabobko/tap/aerospace"
 cask "obsidian"
 cask "tailscale-app"
 cask "telegram"
