@@ -41,6 +41,9 @@ eval "$(~/.local/bin/mise activate)"
 export PATH="$PATH:/Users/mateusz/.lmstudio/bin"
 # End of LM Studio CLI section
 
-
 # Added by Windsurf
 export PATH="/Users/mateusz/.codeium/windsurf/bin:$PATH"
+
+ff() {
+  aerospace list-windows --all | fzf --delimiter '\|' --bind 'enter:execute(bash -c "aerospace focus --window-id {1}")+abort'
+}

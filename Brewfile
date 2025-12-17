@@ -1,18 +1,17 @@
 # tap
+tap "FelixKratz/formulae"
 tap "jesseduffield/lazygit"
 tap "jesseduffield/lazydocker"
 
 # formulae
-brew "asdf"
 brew "awscli"
 brew "bat"
+brew "borders"
 brew "eza"
 brew "fd"
 brew "ffmpeg"
 brew "fzf"
 brew "git-delta"
-brew "go"
-brew "golangci-lint"
 brew "htop"
 brew "imagemagick"
 brew "jesseduffield/lazygit/lazygit"
@@ -60,6 +59,5 @@ mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Klack", id: 6446206067
 mas "Numbers", id: 409203825
-mas "Organic Maps: GPS navigation", id: 1567437057
 mas "Pages", id: 409201541
 mas "Things", id: 904280696
