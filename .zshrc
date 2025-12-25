@@ -1,7 +1,7 @@
 export ZSH="$HOME/.oh-my-zsh"
 export LANG=en_US.UTF-8
 
-ZSH_THEME="robbyrussell"
+# ZSH_THEME="robbyrussell"
 
 # standard plugins can be found in $ZSH/plugins/
 # custom plugins may be added to $ZSH_CUSTOM/plugins/
@@ -47,3 +47,7 @@ export PATH="/Users/mateusz/.codeium/windsurf/bin:$PATH"
 ff() {
   aerospace list-windows --all | fzf --delimiter '\|' --bind 'enter:execute(bash -c "aerospace focus --window-id {1}")+abort'
 }
+
+export CARAPACE_BRIDGES='zsh,fish,bash,inshellisense' # optional
+zstyle ':completion:*' format $'\e[2;37mCompleting %d\e[m'
+source <(carapace _carapace)

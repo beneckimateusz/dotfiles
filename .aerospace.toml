@@ -232,7 +232,7 @@ run = 'layout floating'
     alt-shift-semicolon = 'mode service'
     # alt-shift-enter = 'mode apps'
 
-    alt-enter = 'exec-and-forget open -n /Applications/Alacritty.app'
+    alt-enter = 'exec-and-forget open -n /Applications/Ghostty.app'
 
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
