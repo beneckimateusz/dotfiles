@@ -4,6 +4,7 @@ tap "jesseduffield/lazygit"
 tap "jesseduffield/lazydocker"
 
 # formulae
+brew "atuin"
 brew "awscli"
 brew "bat"
 brew "borders"
@@ -37,6 +38,7 @@ brew "tldr"
 brew "tmux"
 brew "tree"
 brew "yt-dlp"
+brew "zoxide"
 
 # cask
 cask "docker-desktop"

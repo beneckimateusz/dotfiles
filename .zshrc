@@ -1,15 +1,11 @@
 export ZSH="$HOME/.oh-my-zsh"
 export LANG=en_US.UTF-8
 
-# ZSH_THEME="robbyrussell"
-
-# standard plugins can be found in $ZSH/plugins/
-# custom plugins may be added to $ZSH_CUSTOM/plugins/
-plugins=(git npm docker docker-compose mise colored-man-pages z zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git npm docker docker-compose mise colored-man-pages zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
-export BROWSER=/usr/bin/google-chrome-stable
+export BROWSER=/opt/homebrew/bin/zen
 export EDITOR="nvim"
 
 export PATH="$PATH:$HOME/.local/bin"
@@ -34,22 +30,15 @@ alias zshrc="nvim ~/.zshrc"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 eval "$(starship init zsh)"
-
+eval "$(zoxide init zsh)"
+eval "$(atuin init zsh)"
 eval "$(~/.local/bin/mise activate)"
-
-# Added by LM Studio CLI (lms)
-export PATH="$PATH:/Users/mateusz/.lmstudio/bin"
-# End of LM Studio CLI section
-
-# Added by Windsurf
-export PATH="/Users/mateusz/.codeium/windsurf/bin:$PATH"
-
-ff() {
-  aerospace list-windows --all | fzf --delimiter '\|' --bind 'enter:execute(bash -c "aerospace focus --window-id {1}")+abort'
-}
+eval "$(ruby ~/.local/try.rb init ~/stuff/tries)"
 
 export CARAPACE_BRIDGES='zsh,fish,bash,inshellisense' # optional
 zstyle ':completion:*' format $'\e[2;37mCompleting %d\e[m'
 source <(carapace _carapace)
 
-eval "$(ruby ~/.local/try.rb init ~/stuff/tries)"
+ff() {
+  aerospace list-windows --all | fzf --delimiter '\|' --bind 'enter:execute(bash -c "aerospace focus --window-id {1}")+abort'
+}
