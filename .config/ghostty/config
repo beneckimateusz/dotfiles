@@ -6,5 +6,5 @@ mouse-hide-while-typing = true
 macos-option-as-alt = true
 window-decoration = false
 cursor-style-blink = false
-adjust-cell-height = -5%
+adjust-cell-height = -2
 adjust-cell-width = -1
