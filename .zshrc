@@ -1,7 +1,16 @@
 export ZSH="$HOME/.oh-my-zsh"
 export LANG=en_US.UTF-8
 
-plugins=(git npm docker docker-compose mise colored-man-pages zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(
+  colored-man-pages
+  docker
+  docker-compose
+  git
+  mise
+  npm
+  zsh-autosuggestions
+  zsh-syntax-highlighting
+)
 
 source $ZSH/oh-my-zsh.sh
 

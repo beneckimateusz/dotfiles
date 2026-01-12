@@ -37,6 +37,7 @@ brew "telnet"
 brew "tldr"
 brew "tmux"
 brew "tree"
+brew "witr"
 brew "yt-dlp"
 brew "zoxide"
 

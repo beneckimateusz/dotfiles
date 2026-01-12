@@ -1,10 +1,11 @@
 [tools]
+bun = "latest"
 go = "latest"
 golangci-lint = "latest"
 neovim = "latest"
 node = "latest"
 pipx = "latest"
 python = "latest"
-ruby = "3"
+ruby = "4"
 "ubi:sst/opencode" = "1.0.134"
 usage = "latest"
