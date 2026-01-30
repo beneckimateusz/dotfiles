@@ -15,6 +15,8 @@ return {
             },
           },
         },
+        elixirls = { enabled = false },
+        expert = {},
         gopls = {
           settings = {
             gopls = {

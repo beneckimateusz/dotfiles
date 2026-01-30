@@ -37,7 +37,6 @@ brew "tldr"
 brew "tmux"
 brew "tree"
 brew "witr"
-brew "xo/xo/usql"
 brew "yt-dlp"
 brew "zoxide"
 

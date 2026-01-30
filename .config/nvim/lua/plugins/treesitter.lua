@@ -6,6 +6,7 @@ return {
         disable = {
           "yaml",
           "ruby",
+          "elixir",
         },
       },
     },

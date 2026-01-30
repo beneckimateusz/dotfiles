@@ -36,6 +36,12 @@ alias lg="lazygit"
 alias k="kubectl"
 alias zshrc="nvim ~/.zshrc"
 
+alias mf="mix format"
+alias mfa="mix format.all"
+alias mt="mix test"
+alias mr="mix run"
+alias mc="mix compile"
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 eval "$(starship init zsh)"

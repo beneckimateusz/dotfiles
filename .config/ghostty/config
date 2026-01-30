@@ -2,6 +2,10 @@ theme = Catppuccin Mocha
 
 font-size = 14
 font-thicken = true
+font-feature = -calt
+font-feature = -liga
+font-feature = -dlig
+
 adjust-cell-height = -2
 adjust-cell-width = -1
 
