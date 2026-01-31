@@ -7,20 +7,21 @@ return {
         exclude = { "go" },
       },
       servers = {
-        tailwindcss = {
-          init_options = {
-            userLanguages = {
-              elixir = "html",
-              heex = "html",
-            },
-          },
-        },
+        copilot = { enabled = false },
         elixirls = { enabled = false },
         expert = {},
         gopls = {
           settings = {
             gopls = {
               completeFunctionCalls = false,
+            },
+          },
+        },
+        tailwindcss = {
+          init_options = {
+            userLanguages = {
+              elixir = "html",
+              heex = "html",
             },
           },
         },
