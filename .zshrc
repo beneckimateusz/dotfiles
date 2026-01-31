@@ -24,6 +24,7 @@ export PATH="$PATH:/opt/homebrew/opt/libpq/bin"
 alias dotfiles='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 
 alias vim="nvim"
+alias n="nvim"
 alias l="eza -l -g --icons --group-directories-first"
 alias la="eza -a -l -g --icons --group-directories-first"
 alias cat="bat"

@@ -41,6 +41,7 @@ brew "yt-dlp"
 brew "zoxide"
 
 # cask
+cask "brave-browser"
 cask "docker-desktop"
 cask "garmin-express"
 cask "ghostty"
@@ -56,7 +57,6 @@ cask "qbittorrent"
 cask "visual-studio-code"
 cask "whatsapp"
 cask "zed"
-cask "zen"
 cask "zwift"
 
 # mas
