@@ -8,8 +8,8 @@ return {
       },
       servers = {
         copilot = { enabled = false },
-        elixirls = { enabled = false },
-        expert = {},
+        elixirls = { enabled = true },
+        expert = { enabled = false },
         gopls = {
           settings = {
             gopls = {

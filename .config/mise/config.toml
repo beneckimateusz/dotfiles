@@ -1,5 +1,6 @@
 [tools]
 bun = "latest"
+codex = "latest"
 elixir = "1.19"
 erlang = "28"
 go = "latest"
