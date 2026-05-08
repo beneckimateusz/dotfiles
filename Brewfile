@@ -2,6 +2,7 @@
 tap "FelixKratz/formulae"
 tap "jesseduffield/lazydocker"
 tap "anomalyco/tap"
+tap "xo/xo"
 
 # formulae
 brew "anomalyco/tap/opencode"
@@ -15,6 +16,7 @@ brew "fastfetch"
 brew "fd"
 brew "ffmpeg"
 brew "fzf"
+brew "gamdl"
 brew "git-delta"
 brew "htop"
 brew "imagemagick"
@@ -28,7 +30,9 @@ brew "libpq"
 brew "mas"
 brew "ncdu"
 brew "nmap"
+brew "pandoc"
 brew "pgcli"
+brew "pi-coding-agent"
 brew "ripgrep"
 brew "scc"
 brew "starship"
@@ -38,12 +42,15 @@ brew "tldr"
 brew "tmux"
 brew "tree"
 brew "witr"
+brew "xo/xo/usql"
 brew "yt-dlp"
 brew "zoxide"
 
 # cask
 cask "anki"
 cask "brave-browser"
+cask "claude-code"
+cask "codex"
 cask "docker-desktop"
 cask "garmin-express"
 cask "ghostty"
@@ -64,6 +71,9 @@ mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Klack", id: 6446206067
+mas "MyWhoosh Indoor Cycling App", id: 1498889644
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
+mas "SwiftControl", id: 6753721284
 mas "Things", id: 904280696
+
