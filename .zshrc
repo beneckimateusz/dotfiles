@@ -20,6 +20,9 @@ export EDITOR="nvim"
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:/opt/homebrew/opt/libpq/bin"
 
+export PARA="$HOME/Library/Mobile Documents/iCloud~md~obsidian/Documents/para"
+export ICLOUD="$HOME/Library/Mobile Documents/com~apple~CloudDocs"
+
 # https://www.atlassian.com/git/tutorials/dotfiles
 alias dotfiles='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 
@@ -50,10 +53,6 @@ eval "$(zoxide init zsh)"
 eval "$(atuin init zsh)"
 eval "$(~/.local/bin/mise activate)"
 eval "$(ruby ~/.local/try.rb init ~/stuff/tries)"
-
-export CARAPACE_BRIDGES='zsh,fish,bash,inshellisense' # optional
-zstyle ':completion:*' format $'\e[2;37mCompleting %d\e[m'
-source <(carapace _carapace)
 
 ff() {
   aerospace list-windows --all | fzf --delimiter '\|' --bind 'enter:execute(bash -c "aerospace focus --window-id {1}")+abort'

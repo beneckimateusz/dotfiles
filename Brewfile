@@ -1,13 +1,14 @@
 # tap
 tap "FelixKratz/formulae"
 tap "jesseduffield/lazydocker"
+tap "anomalyco/tap"
 
 # formulae
+brew "anomalyco/tap/opencode"
 brew "atuin"
 brew "awscli"
 brew "bat"
 brew "borders"
-brew "carapace"
 brew "docker-compose"
 brew "eza"
 brew "fastfetch"
@@ -20,7 +21,6 @@ brew "imagemagick"
 brew "jesseduffield/lazygit/lazygit"
 brew "jesseduffield/lazydocker/lazydocker"
 brew "jq"
-brew "koekeishiya/formulae/skhd"
 brew "kubernetes-cli"
 brew "k9s"
 brew "lf"
@@ -58,8 +58,6 @@ cask "telegram"
 cask "qbittorrent"
 cask "visual-studio-code"
 cask "whatsapp"
-cask "zed"
-cask "zwift"
 
 # mas
 mas "GarageBand", id: 682658836
