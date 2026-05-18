@@ -48,6 +48,7 @@ brew "zoxide"
 
 # cask
 cask "anki"
+cask "basictex"
 cask "brave-browser"
 cask "claude-code"
 cask "codex"
