@@ -8,20 +8,13 @@ return {
       },
       servers = {
         copilot = { enabled = false },
+        emmet_language_server = { enabled = true },
         elixirls = { enabled = true },
         expert = { enabled = false },
         gopls = {
           settings = {
             gopls = {
               completeFunctionCalls = false,
-            },
-          },
-        },
-        tailwindcss = {
-          init_options = {
-            userLanguages = {
-              elixir = "html",
-              heex = "html",
             },
           },
         },

@@ -5,7 +5,6 @@ return {
       indent = {
         disable = {
           "yaml",
-          "ruby",
           "elixir",
         },
       },
