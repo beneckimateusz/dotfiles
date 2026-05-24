@@ -32,6 +32,7 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.util.project" },
     { import = "lazyvim.plugins.extras.util.rest" },
     -- import/override with your plugins
+    -- ruby: self-managed, inspired by the extra
     { import = "plugins" },
   },
   defaults = {

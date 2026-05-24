@@ -1,13 +1,16 @@
 return {
-  -- Remove markdownlint-cli2 diagnostics from markdown files (keeps formatting)
+  {
+    "mason-org/mason.nvim",
+    opts = { ensure_installed = { "erb-lint" } },
+  },
+
   {
     "mfussenegger/nvim-lint",
-    optional = true,
     opts = {
       linters_by_ft = {
-        markdown = {},
-        ["markdown.mdx"] = {},
+        markdown = {}, -- disable markdown lint
       },
     },
   },
 }
+
