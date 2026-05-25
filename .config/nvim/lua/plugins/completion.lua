@@ -9,5 +9,15 @@ return {
       },
     },
   },
-}
 
+  -- https://github.com/LazyVim/LazyVim/discussions/2248
+  {
+    "windwp/nvim-autopairs",
+    event = "InsertEnter",
+    opts = {},
+  },
+  {
+    "nvim-mini/mini.pairs",
+    enabled = false,
+  },
+}
