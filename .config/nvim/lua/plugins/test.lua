@@ -1,21 +1,16 @@
 return {
   {
-    "zidhuss/neotest-minitest",
-  },
-  {
-    "olimorris/neotest-rspec",
-  },
-
-  {
     "nvim-neotest/neotest",
     dependencies = {
       "zidhuss/neotest-minitest",
-      "olimorris/neotest-rspec",
+
+      "jfpedroza/neotest-elixir",
     },
     opts = {
       adapters = {
         ["neotest-minitest"] = {},
-        ["neotest-rspec"] = {},
+
+        ["neotest-elixir"] = {},
       },
     },
   },

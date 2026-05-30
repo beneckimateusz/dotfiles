@@ -9,8 +9,8 @@ return {
     opts = {
       linters_by_ft = {
         markdown = {}, -- disable markdown lint
+        elixir = { "credo" },
       },
     },
   },
 }
-
