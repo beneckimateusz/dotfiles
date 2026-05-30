@@ -11,6 +11,7 @@ return {
   },
 
   -- https://github.com/LazyVim/LazyVim/discussions/2248
+  -- fixes the annoying <tag><CR> behavior
   {
     "windwp/nvim-autopairs",
     event = "InsertEnter",

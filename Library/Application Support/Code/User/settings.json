@@ -1,7 +1,7 @@
 {
   // themes
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Default Light+",
+  "workbench.colorTheme": "Light+",
   // --- editor ---
   "editor.fontSize": 13,
   "editor.fontFamily": "'JetBrainsMono Nerd Font', 'Roboto Mono', 'monospace', monospace, 'Droid Sans Fallback'",
