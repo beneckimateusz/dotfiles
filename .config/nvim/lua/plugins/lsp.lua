@@ -27,7 +27,7 @@ return {
         emmet_language_server = {
           enabled = true,
           -- inspired by: https://github.com/LazyVim/LazyVim/blob/35f56b9189f2536c806f488c5d889a6000d3eb5f/lua/lazyvim/plugins/extras/lang/tailwind.lua#L43-L59
-          filetypes_include = { "eelixir", "elixir", "html-eex", "heex" },
+          filetypes_include = { "eelixir", "html-eex", "heex" }, -- "elixir"
         },
         tailwindcss = { -- the extra is not up to date with v4 and current nvim-lspconfig defaults
           settings = {

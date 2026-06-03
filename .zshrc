@@ -45,6 +45,7 @@ alias mfa="mix format.all"
 alias mt="mix test"
 alias mr="mix run"
 alias mc="mix compile"
+export ERL_AFLAGS="-kernel shell_history enabled"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 

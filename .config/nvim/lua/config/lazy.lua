@@ -11,12 +11,15 @@ require("lazy").setup({
     -- add LazyVim and import its plugins
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
     -- import any extras modules here
-    { import = "lazyvim.plugins.extras.ai.sidekick" },
-    { import = "lazyvim.plugins.extras.coding.mini-surround" },
-    { import = "lazyvim.plugins.extras.coding.yanky" },
-    { import = "lazyvim.plugins.extras.dap.core" },
     { import = "lazyvim.plugins.extras.editor.snacks_explorer" },
     { import = "lazyvim.plugins.extras.editor.snacks_picker" },
+    { import = "lazyvim.plugins.extras.util.project" },
+    { import = "lazyvim.plugins.extras.util.rest" },
+    { import = "lazyvim.plugins.extras.coding.mini-surround" },
+    { import = "lazyvim.plugins.extras.coding.yanky" },
+    { import = "lazyvim.plugins.extras.ai.sidekick" },
+    { import = "lazyvim.plugins.extras.dap.core" },
+    { import = "lazyvim.plugins.extras.test.core" },
     { import = "lazyvim.plugins.extras.formatting.prettier" },
     { import = "lazyvim.plugins.extras.lang.astro" },
     { import = "lazyvim.plugins.extras.lang.go" },
@@ -30,10 +33,6 @@ require("lazy").setup({
     -- elixir: self-managed
     -- ruby: self-managed
     -- tailwind: self-managed
-    { import = "lazyvim.plugins.extras.linting.eslint" },
-    { import = "lazyvim.plugins.extras.test.core" },
-    { import = "lazyvim.plugins.extras.util.project" },
-    { import = "lazyvim.plugins.extras.util.rest" },
     -- import/override with your plugins
     { import = "plugins" },
   },
