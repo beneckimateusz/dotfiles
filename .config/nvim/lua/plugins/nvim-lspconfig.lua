@@ -88,49 +88,6 @@ return {
     end,
     keys = {
       { "<leader>cL", "<cmd>checkhealth vim.lsp<cr>", desc = "LSP info" },
-      -- goto definitions, references, implementations, type definitions are handled by telescope.lua
-      { "gD", vim.lsp.buf.declaration, desc = "LSP declaration" },
-      {
-        "K",
-        function()
-          return vim.lsp.buf.hover()
-        end,
-        desc = "Hover",
-      },
-      {
-        "gK",
-        function()
-          return vim.lsp.buf.signature_help()
-        end,
-        desc = "Signature help",
-      },
-      {
-        "<c-k>",
-        function()
-          return vim.lsp.buf.signature_help()
-        end,
-        mode = "i",
-        desc = "Signature help",
-      },
-      {
-        "<leader>ca",
-        vim.lsp.buf.code_action,
-        desc = "Code action",
-        mode = { "n", "x" },
-      },
-      {
-        "<leader>cc",
-        vim.lsp.codelens.run,
-        desc = "Run codelens",
-        mode = { "n", "x" },
-      },
-      {
-        "<leader>cC",
-        vim.lsp.codelens.refresh,
-        desc = "Refresh & display codelens",
-        mode = { "n" },
-      },
-      { "<leader>cr", vim.lsp.buf.rename, desc = "Rename" },
     },
   },
 }

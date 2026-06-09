@@ -6,6 +6,8 @@ return {
     config = function()
       local nls = require("null-ls")
 
+      -- formatters/linters/code-actions not covered by LSP servers
+      -- installed via mason.lua
       nls.setup({
         sources = {
           -- js, css, html, json, yaml, markdown
@@ -15,9 +17,6 @@ return {
           nls.builtins.diagnostics.sqlfluff.with({
             extra_args = { "--dialect", "postgres" },
           }),
-
-          -- lua
-          nls.builtins.formatting.stylua,
 
           -- docker
           nls.builtins.diagnostics.hadolint,
@@ -31,7 +30,6 @@ return {
           nls.builtins.formatting.mix,
 
           -- ruby
-          nls.builtins.formatting.rubocop,
           nls.builtins.formatting.erb_format,
           nls.builtins.diagnostics.erb_lint,
 
@@ -45,7 +43,6 @@ return {
       })
     end,
     keys = {
-      { "<leader>cf", vim.lsp.buf.format, desc = "Format (current buffer)" },
       { "<leader>cF", "<cmd>NullLsInfo<cr>", desc = "Null-ls info" },
     },
   },
