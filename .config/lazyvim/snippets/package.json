@@ -1,0 +1,11 @@
+{
+  "name": "mateusz-snippets",
+  "contributes": {
+    "snippets": [
+      {
+        "language": "elixir",
+        "path": "./elixir.json"
+      }
+    ]
+  }
+}

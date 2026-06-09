@@ -1,3 +1,15 @@
--- Keymaps are automatically loaded on the VeryLazy event
--- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
--- Add any additional keymaps here
+local opt = { noremap = true, silent = true }
+
+vim.keymap.set("n", "<C-h>", "<C-w>h", opt)
+vim.keymap.set("n", "<C-j>", "<C-w>j", opt)
+vim.keymap.set("n", "<C-k>", "<C-w>k", opt)
+vim.keymap.set("n", "<C-l>", "<C-w>l", opt)
+
+vim.keymap.set("x", "<", "<gv", opt)
+vim.keymap.set("x", ">", ">gv", opt)
+
+vim.keymap.set("n", "<leader>bd", ":bdelete<CR>", { desc = "Delete buffer" })
+
+vim.keymap.set("n", "<leader>qq", ":qa<CR>", { desc = "Quit all" })
+
+vim.keymap.set("n", "<leader>cd", vim.diagnostic.open_float, { desc = "Line diagnostics" })
