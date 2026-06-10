@@ -11,8 +11,6 @@ local ensure_installed = {
   -- go
   "goimports",
   "gofumpt",
-  "gomodifytags",
-  "impl",
   "golangci-lint",
 }
 

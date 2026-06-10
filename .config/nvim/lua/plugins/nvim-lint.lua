@@ -14,14 +14,6 @@ return {
       go = { "golangci_lint" },
     }
 
-    local default_credo = lint.linters.credo
-    lint.linters.credo = function()
-      if vim.fs.find({ ".credo.exs" }, { upward = true })[1] then
-        return default_credo
-      end
-      return nil
-    end
-
     vim.api.nvim_create_autocmd({ "BufWritePost", "BufReadPost", "InsertLeave" }, {
       callback = function()
         require("lint").try_lint()
