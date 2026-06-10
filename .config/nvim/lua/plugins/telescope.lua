@@ -39,7 +39,7 @@ return {
       { "<leader>gb", require("telescope.builtin").git_branches, desc = "Git branches" },
       { "<leader>gs", require("telescope.builtin").git_status, desc = "Git status" },
       -- search
-      { "<leader>sr", require("telescope.builtin").resume, desc = "Resume" },
+      { "<leader>sR", require("telescope.builtin").resume, desc = "Resume" },
       { "<leader>sg", require("telescope.builtin").live_grep, desc = "Live grep" },
       { "<leader>sb", require("telescope.builtin").current_buffer_fuzzy_find, desc = "Fuzzy find (current buffer)" },
       { "<leader>sc", require("telescope.builtin").commands, desc = "Commands" },
