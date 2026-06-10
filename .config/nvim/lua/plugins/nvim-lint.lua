@@ -11,7 +11,7 @@ return {
       dockerfile = { "hadolint" },
       elixir = { "credo" },
       eruby = { "erb_lint" },
-      go = { "golangci_lint" },
+      go = { "golangcilint" },
     }
 
     vim.api.nvim_create_autocmd({ "BufWritePost", "BufReadPost", "InsertLeave" }, {
