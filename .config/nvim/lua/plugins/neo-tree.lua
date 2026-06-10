@@ -21,16 +21,34 @@ return {
               local path = node:get_id()
               vim.fn.setreg("+", path, "c")
             end,
-          desc = "Copy Path to Clipboard",
+            desc = "Copy Path to Clipboard",
           },
-        }
-      }
+        },
+      },
     },
     keys = {
-      { '<leader>fe', function() require('neo-tree.command').execute({ toggle = true }) end, desc = 'File explorer' },
-      { '<leader>e', "<leader>fe", desc = 'File explorer', remap = true },
-      { '<leader>be', function() require('neo-tree.command').execute({ source = 'buffers', toggle = true }) end, desc = 'Buffer explorer' },
-      { '<leader>ge', function() require('neo-tree.command').execute({ source = 'git_status', toggle = true }) end, desc = 'Git explorer' },
+      {
+        "<leader>fe",
+        function()
+          require("neo-tree.command").execute({ toggle = true })
+        end,
+        desc = "File explorer",
+      },
+      { "<leader>e", "<leader>fe", desc = "File explorer", remap = true },
+      {
+        "<leader>be",
+        function()
+          require("neo-tree.command").execute({ source = "buffers", toggle = true })
+        end,
+        desc = "Buffer explorer",
+      },
+      {
+        "<leader>ge",
+        function()
+          require("neo-tree.command").execute({ source = "git_status", toggle = true })
+        end,
+        desc = "Git explorer",
+      },
     },
   },
 }

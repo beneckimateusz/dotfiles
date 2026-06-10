@@ -1,8 +1,8 @@
 return {
   {
-    'akinsho/bufferline.nvim',
+    "akinsho/bufferline.nvim",
     version = "*",
-    dependencies = {'nvim-tree/nvim-web-devicons'},
+    dependencies = { "nvim-tree/nvim-web-devicons" },
     event = "VeryLazy",
     keys = {
       { "<leader>bp", "<cmd>BufferLineTogglePin<CR>", desc = "Toggle pin" },
@@ -34,6 +34,6 @@ return {
     config = function(_, opts)
       vim.opt.termguicolors = true
       require("bufferline").setup(opts)
-    end
+    end,
   },
 }

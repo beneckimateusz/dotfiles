@@ -43,14 +43,63 @@ return {
       words = { enabled = true },
     },
     keys = {
-      { "<leader>sn", function() Snacks.notifier.show_history() end , desc = "Notification history" },
-      { "<leader>un", function() Snacks.notifier.hide() end, desc = "Dismiss all notifications" },
-      { "<leader>.", function() Snacks.scratch() end, desc = "Scratch buffer" },
-      { "<leader>fs", function() Snacks.scratch.select() end, desc = "Scratch buffer" },
-      { "<C-/>", function() Snacks.terminal() end, desc = "Toggle terminal" },
-      { "<C-_>", function() Snacks.terminal() end, desc = "which_key_ignore" }, -- for some reason this is needed for <C-/> to work
-      { "<leader>gg", function() Snacks.lazygit() end, desc = "Lazygit" },
-      { "<leader>gB", function() Snacks.gitbrowse() end, desc = "Git browse", mode = { "n", "v" } },
+      {
+        "<leader>sn",
+        function()
+          Snacks.notifier.show_history()
+        end,
+        desc = "Notification history",
+      },
+      {
+        "<leader>un",
+        function()
+          Snacks.notifier.hide()
+        end,
+        desc = "Dismiss all notifications",
+      },
+      {
+        "<leader>.",
+        function()
+          Snacks.scratch()
+        end,
+        desc = "Scratch buffer",
+      },
+      {
+        "<leader>fs",
+        function()
+          Snacks.scratch.select()
+        end,
+        desc = "Scratch buffer",
+      },
+      {
+        "<C-/>",
+        function()
+          Snacks.terminal()
+        end,
+        desc = "Toggle terminal",
+      },
+      {
+        "<C-_>",
+        function()
+          Snacks.terminal()
+        end,
+        desc = "which_key_ignore",
+      }, -- for some reason this is needed for <C-/> to work
+      {
+        "<leader>gg",
+        function()
+          Snacks.lazygit()
+        end,
+        desc = "Lazygit",
+      },
+      {
+        "<leader>gB",
+        function()
+          Snacks.gitbrowse()
+        end,
+        desc = "Git browse",
+        mode = { "n", "v" },
+      },
     },
   },
 }
