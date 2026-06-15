@@ -1,6 +1,6 @@
-theme = Atom One Dark
+theme = Catppuccin Mocha
 
-font-size = 14
+font-size = 16
 font-thicken = true
 font-feature = -calt
 font-feature = -liga
