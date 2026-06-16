@@ -18,6 +18,11 @@ return {
         "yamlls",
         "taplo", -- toml
         "marksman", -- markdown
+        "bashls",
+
+        -- python
+        "basedpyright",
+        "ruff",
 
         -- ruby
         "rubocop",

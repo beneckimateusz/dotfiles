@@ -12,6 +12,7 @@ return {
       elixir = { "credo" },
       eruby = { "erb_lint" },
       go = { "golangcilint" },
+      sh = { "shellcheck" },
     }
 
     vim.api.nvim_create_autocmd({ "BufWritePost", "BufReadPost", "InsertLeave" }, {

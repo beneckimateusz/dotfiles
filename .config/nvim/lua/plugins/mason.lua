@@ -3,6 +3,7 @@ local ensure_installed = {
   "sqlfluff",
   "shfmt",
   "hadolint", -- docker
+  "shellcheck",
 
   -- ruby
   "erb-formatter",

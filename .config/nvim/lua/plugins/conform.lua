@@ -25,6 +25,7 @@ return {
       ruby = { "rubocop" },
       eruby = { "erb_format" },
       go = { "goimports", "gofumpt" },
+      python = { "ruff_format" },
       sh = { "shfmt" },
     },
     formatters = {
