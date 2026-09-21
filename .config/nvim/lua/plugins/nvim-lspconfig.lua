@@ -12,7 +12,7 @@ return {
         "elixirls",
         "emmet_language_server",
         "gopls",
-        "tsgo",
+        "tsc",
         "astro",
         "jsonls",
         "yamlls",
